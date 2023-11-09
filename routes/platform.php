@@ -35,6 +35,10 @@ use Tabuna\Breadcrumbs\Trail;
 Route::screen('/main', PlatformScreen::class)
     ->name('platform.main');
 
+// Platform > Customer 
+Route::screen('customers', App\Orchid\Screens\Customer\CustomerListScreen::class)
+    ->name('platform.customers');
+
 // Platform > Profile
 Route::screen('profile', UserProfileScreen::class)
     ->name('platform.profile')
